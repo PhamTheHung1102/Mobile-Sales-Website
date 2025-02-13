@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(226, 223, 223);
+    font-family: Arial, sans-serif; /* Phông chữ thống nhất */
+    
+}
+.na, .nav, .header {
+    border: none; /* Loại bỏ viền */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+.header {
+    background-color:#d20c0c; /* Màu nền header */
+    color: black; /* Màu chữ */ 
+    padding: 0px 0; /* Padding top và bottom */
+}
+.header form {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 0px;
+    margin-bottom: 0px; /* Khoảng cách dưới */
+}
+
+.header input[type="text"] {
+    flex: 1; /* Tự mở rộng ra toàn bộ phần còn lại của flex container */
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(177, 208, 21);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+    margin-left: 5px; /* Khoảng cách với ô nhập */
+}
+
+.header input[type="submit"]:hover {
+    background-color: rgb(215, 237, 19);
+}
+
+/* Đảm bảo giữa Search và Cart có khoảng cách */
+.header img, .header a {
+    margin-left: 5px; /* Khoảng cách với ô nhập */
+    margin-right: 5px; /* Khoảng cách với nút Search */
+}
+.nav {
+    background-color: #a19999; /* Màu nền của navbar */
+    height: 50px;
+    vertical-align: middle;
+}
+
+.box input[type="text"], .box input[type="submit"], .box button {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 16px; /* Kích thước chữ */
+}
+
+.box input[type="text"] {
+    width: calc(100% - 20px); /* Điều chỉnh chiều rộng để phù hợp với padding */
+    height: 40px; /* Chiều cao */
+    padding: 0 10px; /* Padding left và right */
+    margin: 5px 0; /* Khoảng cách giữa các phần tử */
+}
+
+.box input[type="submit"], .box button {
+    background: rgb(179, 159, 159);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.box input[type="submit"]:hover, .box button:hover {
+    background: rgb(149, 129, 129);
+}
+
+.box button {
+    background-color: #fff;
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1d8fc1;
+}
+
+.div.vertical-line {
+    height: 50px;
+    border-right: 0.5px groove #e5e5e5;
+}
+
+#box {
+    border: 1px solid #c8c8c8;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    top: 0;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.vertical-menu a.active {
+    background-color: red;
+    color: white;
+}
+
+.Sp {
+    margin-left: 320px;
+    font-size: 30px;
+    font-family: Arial;
+    color: black;
+   
+}
+
+.head {
+    background-color: white;
+}
+
+.sp1 {
+    color: black;
+}
+
+.sp1:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 620px) {
+    .na, .head, .nav, .box input[type="text"], .box input[type="submit"], .box button, a, a:hover, .div.vertical-line, #box, .fixed, .vertical-menu, .vertical-menu a:hover, .vertical-menu a.active, .Sp, .head, .sp1, .sp1:hover {
+        width: 100%;
+    }
+}

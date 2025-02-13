@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title> sign up </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+	.header {
+		border: solid 1px ;
+		background-color: black;
+		color: white;
+    	padding-bottom: 15px;
+		
+	}
+	 .box input[type="text"]
+	{
+		position: relative;
+		width: 250px;
+		height: 50.5px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		left: -4.5px;
+		padding-left: 5px;
+	}
+	.box input[type="submit"] {
+		position: relative;
+		background: red;
+		width: 70px;
+		height: 51px;
+		border: none;
+		outline: none;
+		left: -9px;
+	}
+	.box button {
+		position: relative;
+		background-color: #fff;
+		width: 180px;
+		height: 50px;
+		border: none;
+		outline: none;
+		cursor: pointer;	
+		color: black;
+	} 
+	body {  
+		background-color:rgb(200, 200, 200) ;
+		padding-top: 0px;
+		}
+		.form-control { 
+		margin-bottom: 10px;
+		}
+		.login-screen-bg {  
+		background-color: #0c082f;
+	}
+	#box {
+		border: 1px solid rgb(200, 200, 200);
+		box-shadow: rgba(0 ,0,0,0.1) 0px 5px 5px 2px;
+		background: rgba(0.1,0.1,0.1,0.1);
+		border-radius: 4px; top: 50px;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="container"> 
+			<div class="row"> 
+				<div class="col-xs-12 col-sm-12 col-md-4 well well-sm col-md-offset-4" id="box"> 
+					<legend><a href="https://www.iconfinder.com/"><i class="glyphicon glyphicon-globe"></i></a>Sign up!
+					</legend> 
+					<form action="http://hocwebgiare.com" method="post" class="form" role="form"> 
+						<div class="row"> 
+							<div class="col-xs-6 col-md-6"> <input class="form-control" name="firstname" placeholder="firstname" required="" autofocus="" type="text"> 
+							</div> 
+							<div class="col-xs-6 col-md-6"> <input class="form-control" name="lastname" placeholder="lastname" required="" type="text"> 
+							</div> 
+						</div> 
+						<input class="form-control" name="youremail" placeholder="Email" type="email">
+						<input class="form-control" name="password" placeholder="password" type="password">
+						<input class="form-control" name="retypepassword" placeholder="enter the password" type="password">
+						<input class="form-control" name="yoursdt" placeholder="phone number" type="text">
+						<input class="form-control" name="youradd" placeholder="address" type="text">
+
+						<br> 
+						<button class="btn btn-lg btn-primary btn-block" type="submit"> sign up</button> 
+					</form> 
+				</div> 
+		 </div>
+		</div>
+	</body>
+</html>

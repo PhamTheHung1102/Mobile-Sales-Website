@@ -1,0 +1,274 @@
+<html>
+	<head> 	
+		<title> Hùng Hà mobile  </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="admin.js">
+		
+
+
+</head>
+
+<body>
+ 
+
+    <!-- Menu -->
+    <body>
+		
+        <div class="header">
+            <div class="box" > 
+            <div class="dropdown">
+                <form>
+                <a href="index.html"><img src="hung.png" style="width: 100px; height: 85px; margin-left: 150px; margin-right: 100px;" > </a>
+                <h1 style="color: aliceblue;">HungHamobile - admin</h1> 
+                <a href="GioHang.html"><img src="./figure/user.png" style="width: 45px;margin-right: 200px;"></a>
+
+                
+                </form>
+                
+            </div>
+            </div>
+        </div>
+        <form>
+            <ul class="hmenu">
+                <li><a href="admin.html">Home</a></li>
+                <li><a href="admin2.html">Products</a></li>
+                <li><a href="admin3.html">Orders</a></li>
+                <li><a href="admin2.html">Customers</a></li>
+            </ul>
+               
+            <style>
+                .hmenu {
+margin: 0;
+text-align: center;
+padding: 0;
+border-radius: 5px;
+box-shadow: 0 0 5px rgb(97, 18, 150);
+list-style: none;
+background-color: rgb(209, 203, 12);
+height: 40px;
+}
+
+ul.hmenu > li > a {
+display: inline-block;
+line-height: 40px;
+text-decoration: none;
+text-align: center;
+font-variant: small-caps;
+padding: 0 20px; /* Thêm padding bên trái và bên phải */
+color: rgb(18, 17, 17);
+}
+
+ul.hmenu > li > a:hover {
+color: blue;
+font-weight: bold;
+}
+
+ul.hmenu > li {
+display: inline-block; /* Chuyển từ float sang display: inline-block */
+margin-right: 10px;
+}
+
+            </style>
+            <hr>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Quản lý Sản phẩm</title>
+            <style>
+                /* CSS cho bảng */
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                table, th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: center;
+                }
+                th {
+                    background-color: rgb(227, 236, 190);
+                }
+                /* CSS cho nút */
+                .btn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                .btn:hover {
+                    background-color: #45a049;
+                }
+                /* CSS cho ảnh */
+                .product-img {
+                    width: 100px;
+                    height: auto;
+                }
+            </style>
+            </head>
+            <body>
+            
+            <h2 style="text-align: center;">Quản lý Sản phẩm</h2>
+            
+            <!-- Nút Thêm Sản phẩm -->
+            <button class="btn" onclick="openForm()">Thêm Sản phẩm</button>
+            
+            <!-- Bảng Hiển thị Sản phẩm -->
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Ảnh sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Hành động</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><img src="./figure/IP11XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 11 light blue Pro 256GB</td>
+                <td>5 </td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="./figure/IP14XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>	iPhone 14 blue Pro 256GB</td>
+                <td>3</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><img src="./figure/IP13LUC.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 13 green Pro 256GB</td>
+                <td>1</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><img src="./figure/IP13vang.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>	iPhone 13 gold Pro 256GB</td>
+                <td>7</td>
+                <td>  
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><img src="./figure/ss3.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>	Samsung Galaxy A05s 6GB phone</td>
+                <td>10</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>  
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><img src="./figure/IP11XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 11 Pro</td>
+                <td>10</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><img src="./figure/IP11XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 11 Pro</td>
+                <td>10</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><img src="./figure/IP11XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 11 Pro</td>
+                <td>10</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><img src="./figure/IP11XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 11 Pro</td>
+                <td>10</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><img src="./figure/IP11XANH.jpeg" alt="iPhone 11 Pro" class="product-img"></td>
+                <td>iPhone 11 Pro</td>
+                <td>10</td>
+                <td>
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </td>
+              </tr>
+              <!-- Thêm các dòng dữ liệu sản phẩm khác ở đây -->
+            </table>
+            
+            <!-- Mẫu Thêm Sản phẩm (ẩn mặc định) -->
+            <div id="addProductForm" style="display: none;">
+              <h3>Thêm Sản phẩm</h3>
+              <form>
+                <label for="productName">Tên sản phẩm:</label><br>
+                <input type="text" id="productName" name="productName"><br>
+                <label for="quantity">Số lượng:</label><br>
+                <input type="number" id="quantity" name="quantity"><br>
+                <label for="productImage">Ảnh sản phẩm:</label><br>
+                <input type="file" id="productImage" name="productImage"><br><br>
+                <button type="submit" class="btn">Thêm</button>
+                <button type="button" class="btn" onclick="closeForm()">Hủy</button>
+              </form>
+            </div>
+            
+            <script>
+            function openForm() {
+              document.getElementById("addProductForm").style.display = "block";
+            }
+            function closeForm() {
+              document.getElementById("addProductForm").style.display = "none";
+            }
+            </script>
+            
+            </body>
+            </html>
+            
+
+       
+               
+           
+
+</body>
+
+</html>

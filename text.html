@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Form</title>
+<style>
+  /* Style cho popup */
+.popup {
+  display: none; /* Ẩn ban đầu */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Màu nền đen, mờ */
+}
+
+/* Style cho nội dung của popup */
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Độ rộng của popup */
+}
+
+/* Style cho nút đóng popup */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+<script>// Mở popup
+  function openPopup() {
+    document.getElementById("popupForm").style.display = "block";
+  }
+  
+  // Đóng popup khi nhấn nút đóng hoặc click bên ngoài popup
+  function closePopup() {
+    document.getElementById("popupForm").style.display = "none";
+  }
+  </script>
+
+</head>
+<body>
+
+<!-- Button để mở popup -->
+<button onclick="openPopup()">Mở Form</button>
+
+<!-- Popup Form -->
+<div id="popupForm" class="popup">
+  <form class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Xác nhận Xóa</h2>
+    <p>Bạn có chắc chắn muốn xóa không?</p>
+    <button type="button" onclick="closePopup()">Hủy</button>
+    <button type="submit">Xóa</button>
+  </form>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
